@@ -22,8 +22,8 @@ public class VNPayConfig {
 	// là đường đẫn tới trang thanh toán của vnpay
 	public static String vnp_PayUrl="https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 	// đường dẫn sau khi thực hiện thanh toán xong(trang thanh toán thành công)
-	//public static String vnp_ReturnUrl="https://da-server2-production.up.railway.app/usedService/vnpay_return";
-	public static String vnp_ReturnUrl="http://localhost:8082/usedService/vnpay_return";
+	public static String vnp_ReturnUrl="https://server-production-004b.up.railway.app/usedService/vnpay_return";
+	//public static String vnp_ReturnUrl="http://localhost:8082/usedService/vnpay_return";
 	//mã website của merchant trên hệ thống của vnpay
 	public static String vnp_TmnCode="L7O2WMWN";
 	//mã khóa bí mật
