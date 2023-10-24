@@ -9,4 +9,9 @@ import com.example.model.User;
 public interface UserRepository extends JpaRepository<User,Integer>{
 	boolean existsByEmail(String email);
 	User findByEmail(String email);
+
+	@Modifying
+	@Transactional
+	@Query(value="update user set address=?, name=?, phone=? where id=?", nativeQuery = true)
+	int updateUser(String address, String name, String phone, int id);	
 }
