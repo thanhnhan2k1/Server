@@ -93,7 +93,7 @@ public class UsedServiceController {
 
 		Calendar cld = Calendar.getInstance();
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
-		// cld.add(Calendar.HOUR, 7);
+		cld.add(Calendar.HOUR, 7);
 		String vnp_CreateDate = formatter.format(cld.getTime());
 		System.out.println(vnp_CreateDate);
 		vnp_Params.put("vnp_CreateDate", vnp_CreateDate);
