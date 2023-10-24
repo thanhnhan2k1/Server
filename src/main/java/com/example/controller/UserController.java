@@ -186,11 +186,8 @@ public class UserController {
 //	}
 	
 	@PostMapping("/updateInfor")
-	public User updateInfor(@RequestBody User user) {
-		User u=userRepo.findByEmail(user.getEmail());
-		u.setName(user.getName());
-		u.setAddress(user.getAddress());
-		u.setPhone(user.getPhone());
-		return userRepo.save(user);
+	public int updateInfor(@RequestBody User user) {
+		return userRepo.updateUser(user.getAddress(), user.getName(), user.getPhone(), user.getId());
+		
 	}
 }
