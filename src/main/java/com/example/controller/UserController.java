@@ -188,6 +188,5 @@ public class UserController {
 	@PostMapping("/updateInfor")
 	public int updateInfor(@RequestBody User user) {
 		return userRepo.updateUser(user.getAddress(), user.getName(), user.getPhone(), user.getId());
-		
 	}
 }
