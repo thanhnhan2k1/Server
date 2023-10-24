@@ -93,7 +93,7 @@ public class UsedServiceController {
 
 		Calendar cld = Calendar.getInstance();
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
-		cld.add(Calendar.HOUR, 7);
+		// cld.add(Calendar.HOUR, 7);
 		String vnp_CreateDate = formatter.format(cld.getTime());
 		System.out.println(vnp_CreateDate);
 		vnp_Params.put("vnp_CreateDate", vnp_CreateDate);
@@ -187,7 +187,7 @@ public class UsedServiceController {
 //						System.out.println("dung");
 //						return ResponseEntity.ok(usedService);
 //						String url=request.getRequestURL().toString();
-						String url="http://localhost:8081/usedService/vnpay_return?";
+						String url="https://da-production.up.railway.app/usedService/vnpay_return?";
 						String query=request.getQueryString();
 						response.sendRedirect(url+query);
 					}
